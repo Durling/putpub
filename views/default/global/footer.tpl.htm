@@ -1,0 +1,100 @@
+<div class="aw-footer-wrap">
+	<div class="aw-footer">
+		Copyright © 2012-<?php echo date('Y'); ?><?php if(get_setting('icp_beian')){ ?><span class="hidden-xs"> - <?php echo get_setting('icp_beian'); ?><?php } ?>, 合作QQ：<a href="http://wpa.qq.com/msgrd?V=1&uin=878877528&Site=扑扑&Menu=yes" target="_blank">878877528</a></span>
+
+		<span class="hidden-xs">Powered By <a href="http://putpub.com/">PutPub 扑扑 | IT技术问答开源社区</a>
+		<a href="http://putpub.com/try/" target="_blank">try</a></span>
+<div class="friendlink">
+<ul>
+<li>友情链接：</li>
+<li><a href="http://segmentfault.com/" target="_blank">Segmentfault</a></li>
+<li><a href="https://github.com/" target="_blank">GitHub</a></li>
+<li><a href="http://imooc.com/" target="_blank">慕课网</a></li>
+<li><a href="http://cnblogs.com/" target="_blank">博客园</a></li>
+<li><a href="http://proginn.com/" target="_blank">程序员客栈</a></li>
+<li><a href="http://nuoluan.com/" target="_blank">诺栾网络</a></li><br/>
+<li><a href="http://pagerank.webmasterhome.cn/?domain=www.xinwor.com" target="_blank"><img src="http://pagerank.webmasterhome.cn/MyRank?s=1&url=www.xinwor.com" width=80 height=15 border=0 alt="www.xinwor.com网站PR查询" align=absmiddle></a></li>
+</ul>
+</div>
+
+
+<div class="Xicro_blog">
+        	<span>关注我们：</span>
+            <span><a href="http://weibo.com/putpub" target="_blank"><img src="static/css/default/img/xinwor-weibo.png"></a></span>
+            <span><a href="javascript:;"><img id="weixin_logo" src="static/css/default/img/xinwor-weixin.png"></a></span>
+            <div class="Xicro_erw" id="weixin_erweima" ><img src="static/css/default/img/xinwor-erweima.jpg"></div>
+</div>
+
+		<script type="text/javascript">
+		 var weixin_logo = document.getElementById("weixin_logo");
+		 var weixin_erweima = document.getElementById("weixin_erweima");
+		 weixin_logo.onmouseover = function(){
+			weixin_erweima.style.display = 'block';
+		 };
+		 weixin_logo.onmouseout = function(){
+			weixin_erweima.style.display = 'none';
+		 };
+		</script>	
+
+		<?php if (is_mobile(true)) { ?>
+			<div class="container">
+				<div class="row">
+					<p align="center"><?php _e('版本切换'); ?>: <b><?php _e('PC 版'); ?></b> | <a href="m/ignore_ua_check-FALSE"><?php _e('手机版'); ?></a></p>
+				</div>
+			</div>
+		<?php } ?>
+	</div>
+</div>
+
+<a class="aw-back-top hidden-xs" href="javascript:;" onclick="$.scrollTo(1, 600, {queue:true});"><i class="icon icon-up"></i></a>
+
+<?php echo get_setting('statistic_code'); ?>
+
+<!-- DO NOT REMOVE -->
+<div id="aw-ajax-box" class="aw-ajax-box"></div>
+
+<div style="display:none;" id="__crond">
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#__crond').html(unescape('%3Cimg%20src%3D%22' + G_BASE_URL + '/crond/run/<?php echo TIMESTAMP; ?>%22%20width%3D%221%22%20height%3D%221%22%20/%3E'));
+		});
+	</script>
+</div>
+
+<?php TPL::output('global/debuger.tpl.htm'); ?>
+<!-- / DO NOT REMOVE -->
+
+<style>
+.friendlink {
+    margin: 0 auto;
+    width: 800px;
+}
+.friendlink li {
+    display: inline-block;
+}
+.Xicro_blog img {
+    background-color: #529252;
+    border-radius: 50px;
+}
+.Xicro_blog img:hover {
+    background-color: green;
+}
+.Xicro_blog {
+    width: 200px;
+    margin: 0 auto;
+}
+div#weixin_erweima img {
+    border-radius: 0px;
+	width:140px;
+}
+div#weixin_erweima {
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 80px;
+    display: none;
+}
+</style>
+
+</body>
+
+</html>

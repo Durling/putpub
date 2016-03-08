@@ -1,0 +1,339 @@
+
+/* 顶部 */
+html,body{
+	margin:0;
+	font-family:"Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,sans-serif !important;
+	height: 100%;
+}
+/**自定义高度 水平垂直居中类**/
+.text-center-middle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height:500px;
+    line-height: 400px;
+}
+.header-top{
+    background-color: rgba(255, 255, 255, 0.9);
+/* 	box-shadow: 0 1px 10px 1px gray; */
+	z-index: 1;
+    line-height: 60px;
+	top:0;
+	transition:top .3s;
+}
+.gizle{
+	position:fixed;
+	top:-62px;
+}
+.sabit{
+	top:0;
+}
+
+.header-top ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.youshihou-logo {
+
+}
+.show-menu{
+	position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 60px;
+	color:#a2a4a6;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;	/* Firefox 4 */
+	-webkit-transition: all 0.5s;	/* Safari 和 Chrome */
+	-o-transition: all 0.5s;
+}
+.play-video{
+	position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 60px;
+	color:#a2a4a6;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;	/* Firefox 4 */
+	-webkit-transition: all 0.5s;	/* Safari 和 Chrome */
+	-o-transition: all 0.5s;
+}
+.play-video a{
+	color:rgba(255, 66, 0, 0.5);
+}
+.play-video a:hover{
+	color:#FF4200;
+}
+.show-menu:hover{
+	color: black;
+}
+
+.header-list a {
+    padding-top: 5px;
+    color: #a2a4a6;
+	font-size: 16px;
+	text-decoration: none;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;	/* Firefox 4 */
+	-webkit-transition: all 0.5s;	/* Safari 和 Chrome */
+	-o-transition: all 0.5s;
+}
+.header-list a:hover {
+    border-top: solid 1px black;
+    padding-top: 5px;
+    color: black;
+	text-decoration: none;
+}
+.main-bigbg {
+	margin-top: 60px;
+    height: 100%;
+	background: url(../images/index_bg_image.png) no-repeat;
+	background-color: #F1F1F1;
+	background-position: center;
+/* 	background-attachment: fixed; */
+	background-size: cover;
+}
+.download-app {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom:0;
+}
+.banner-aboutus-bg {
+	margin-top: 60px;
+    background-color:#FFF;
+}
+.banner-aboutus{
+    background-color:#D6895D;
+}
+.banner-aboutus img{
+    width:100%;
+	min-width:100%:
+}
+.banner-joinus {
+    background-color: #F19E6B;
+}
+.banner-joinus img{
+    width:100%;
+	min-width:100%:
+}
+.main-zhaopin {
+    background-color: #F1F1F1;
+	padding: 20px;
+}
+.main-zhaopin h4 {
+    color: #F52B00;
+}
+.zhaopin-list h4 span {
+    color: black;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    padding: 5px;
+}
+
+.zhaopin-list li {
+	padding: 30px;
+}
+.dashed-line {
+    border-bottom: dashed 1px black;
+    padding: 10px;
+}
+.download-block {
+    height: 500px;
+    line-height: 400px;
+    padding-top: 130px;
+}
+
+.main-video {
+    height: 500px;
+    background-color: #E1E1E6;
+}
+.main-aboutus {
+    padding: 20px;
+    background-color: #E1E1E6;
+}
+.main-aboutus h3 span {
+    color: black;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    padding: 5px;
+}
+.main-restaurant {
+    background-color: #F1F1F1;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+.main-restaurant li img {
+    width: 100%;
+    padding-top: 10px;
+}
+.main-activity {
+    background-color: #E1E1E6;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.main-activity li img  {
+    width: 100%;
+    max-width: 294px;
+}
+
+.footer{
+    background-color: #353535;
+	color: rgba(255, 255, 255, 0.5);
+
+}
+.footer-list {
+    padding: 10px;
+}
+.footer-list a {
+    color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+}
+.footer-list i {
+
+}
+
+p.weibo {
+	background: url(../images/common_logo_weibo.png)0 0 no-repeat;
+	width: 24px;
+    height: 24px;
+}
+p.wechat {
+	background: url(../images/common_logo_wechat.png)0 0 no-repeat;
+	width: 26px;
+    height: 24px;
+}
+
+
+
+/**下载按钮从下向上渐入效果**/
+.download-block {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+    -webkit-animation-name: fadeInOut1;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: linear;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-direction: alternate;
+}
+@-webkit-keyframes fadeInOut1 {
+    0% {
+        opacity:0;
+		bottom: -80px; 
+     }
+    25% {
+        opacity:1;
+		bottom:20px; 
+    }
+    50% {
+        opacity: 1;  
+		bottom: 0;	
+    }
+    75% {
+        opacity:0.6;
+    }
+}
+
+
+
+
+/**圆形加载效果 慢慢向外扩散**/
+.spinner {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  background-color: blue;
+  border-radius: 100%; 
+  -webkit-animation: scaleout 2.0s infinite ease-in-out;
+  animation: scaleout 2.0s infinite ease-in-out;
+}
+@-webkit-keyframes scaleout {
+  0% { -webkit-transform: scale(0.0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+@keyframes scaleout {
+  0% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 100% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+
+/**模态框样式**/
+.btn-taobao-color {
+    color: #fff;
+    background-color: #FF4200;
+    border-color: #FF4200;
+	min-width:125px;	
+}
+.btn-taobao-color:hover{
+    color: #fff;	
+}
+.btn-taobao-color-border {
+    color: #FF4200;
+    background-color: #fff;
+    border-color: #FF4200;
+	min-width:125px;	
+}
+.btn-taobao-color-border:hover {
+    color: #FF4200;	
+}
+.modal {
+    position: fixed;
+	top:60px;
+    margin: 0 auto;
+    width: 60%;
+	height:75%;
+	max-width: 600px;
+	min-width: 300px;
+    z-index: 2000;
+    max-height:500px;
+    background-color: #ffffff;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+}
+.modal-body h4 img {
+    width: 50%;
+    max-width: 220px;
+    border-radius: 3px;
+    border:dashed 1px gray;
+}
+.modal-wechat {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 120px;
+	height:120px;
+    z-index:3000;
+    background-color: #ffffff;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+}
+.modal-backdrop.in {
+    filter: alpha(opacity=80);
+    opacity: .8;
+}
+.modal-footer {
+    padding: 15px;
+	text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
